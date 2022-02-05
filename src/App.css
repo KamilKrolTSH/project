@@ -81,3 +81,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.bottom-text-container {
+  margin-top: 80px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.bottom-text-container div {
+  margin-top: 10px;
+}
