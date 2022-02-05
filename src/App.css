@@ -8,11 +8,7 @@
 }
 
 .container {
-  background-color: #373c46;
   width: 80%;
-  border-radius: 10px;
-  margin-top: 200px;
-  margin-bottom: 200px;
   min-width: 500px;
   padding: 20px;
 }
@@ -20,10 +16,14 @@
 .controls {
   margin-top: 75px;
   margin-bottom: 20px;
-
   color: white;
   font-size: 20px;
   font-weight: 700;
+  display: flex;
+}
+
+.image-container {
+  width: 100%;
 }
 
 .rightBox {
@@ -33,4 +33,51 @@
 
 .copy-button-container {
   margin-left: 25px;
+}
+
+.font-green {
+  color: #52c952;
+}
+
+.font-blue {
+  color: #31a2ff;
+}
+
+.font-red {
+  color: red;
+}
+
+.controls-right {
+  background-color: #373c46;
+  width: 100%;
+  padding: 50px;
+}
+
+.image-main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.controls-right-top {
+  display: flex;
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.my-svg {
+  width: 80px;
+  height: 80px;
+}
+
+.password-container {
+  width: 100%;
+}
+
+.controll-buttons-container {
+  display: flex;
+  justify-content: space-between;
 }
