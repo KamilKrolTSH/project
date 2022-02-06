@@ -1,6 +1,6 @@
 .App {
   color: white;
-  text-align: center;
+  text-align: right;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -47,6 +47,10 @@
   color: red;
 }
 
+.font-orange {
+  color: orange;
+}
+
 .controls-right {
   background-color: #373c46;
   width: 100%;
@@ -84,7 +88,7 @@
 
 .bottom-text-container {
   margin-top: 80px;
-  text-align: left;
+  text-align: justify;
   font-weight: bold;
 }
 

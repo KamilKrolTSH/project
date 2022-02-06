@@ -30,6 +30,7 @@ enum PasswordType {
 enum ColorType {
   GREEN = "font-green",
   BLUE = "font-blue",
+  ORANGE = "font-orange",
   RED = "font-red",
 }
 
@@ -49,6 +50,8 @@ const getPasswordType = (length: number) => {
 const getPasswordColor = (length: number) => {
   if (length <= 7) {
     return ColorType.RED;
+  } else if (length <= 9) {
+    return ColorType.ORANGE;
   } else if (length <= 11) {
     return ColorType.BLUE;
   }
@@ -157,7 +160,7 @@ function App() {
                   />
                 </Grid>
                 <Grid item xs={6}>
-                  Include number:
+                  Include numbers:
                 </Grid>
                 <Grid className="rightBox" item xs={6}>
                   <Checkbox
@@ -168,7 +171,7 @@ function App() {
                   <div> e.g. (123456)</div>
                 </Grid>
                 <Grid item xs={6}>
-                  Inlude special characters:
+                  Include special characters:
                 </Grid>
                 <Grid className="rightBox" item xs={6}>
                   <Checkbox
@@ -181,7 +184,7 @@ function App() {
                   <div> e.g. (@#$%/!)</div>
                 </Grid>
                 <Grid item xs={6}>
-                  Include Lowercase Characters:
+                  Include lowercase characters:
                 </Grid>
                 <Grid className="rightBox" item xs={6}>
                   <Checkbox
@@ -194,7 +197,7 @@ function App() {
                   <div> e.g. (abcdefgh)</div>
                 </Grid>
                 <Grid item xs={6}>
-                  Include Uppercase Characters:
+                  Include uppercase characters:
                 </Grid>
                 <Grid className="rightBox" item xs={6}>
                   <Checkbox
@@ -255,6 +258,7 @@ function App() {
               height: "3px",
               color: "#282c34",
               backgroundColor: "#373c46",
+              marginTop: "100px",
             }}
             light
           />
@@ -284,7 +288,7 @@ function App() {
             </div>
             <div>
               5. Do not use any dictionary word in your passwords. Examples of
-              strong passwords: ePYHc~dS*)8$+V-' , qzRtC6rXN3N\RgL ,
+              strong passwords: ePYHc~dS*)8$+V-', qzRtC6rXN3N\RgL,
               zbfUMZPE6`FC%)sZ. Examples of weak passwords: qwert12345,
               Gbt3fC79ZmMEFUFJ, 1234567890, 987654321, nortonpassword.
             </div>
